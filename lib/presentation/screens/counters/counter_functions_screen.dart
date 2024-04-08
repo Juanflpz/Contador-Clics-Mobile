@@ -1,25 +1,34 @@
 import 'package:flutter/material.dart';
 
-class CounterScreen extends StatefulWidget {
-  const CounterScreen({super.key});
+class CounterFunctionsScreen extends StatefulWidget {
+  const CounterFunctionsScreen({super.key});
 
   @override
-  State<CounterScreen> createState() => _CounterScreenState();
+  State<CounterFunctionsScreen> createState() => _CounterFunctionsScreenState();
 }
 
-class _CounterScreenState extends State<CounterScreen> {
+class _CounterFunctionsScreenState extends State<CounterFunctionsScreen> {
   int clickCounter = 0;
   @override
   Widget build(BuildContext context) {
     //return const Placeholder(); //widget con x que muestra dónde se va a trabajar
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 36, 125, 120),
-        title: const Text(
-          "Counter Screen",
-          style: TextStyle(color: Color.fromARGB(255, 42, 7, 53)),
-        ),
-      ),
+          backgroundColor: const Color.fromARGB(255, 36, 125, 120),
+          title: const Text(
+            "Counter Functions",
+            style: TextStyle(color: Color.fromARGB(255, 42, 7, 53)),
+          ),
+          actions: [
+            IconButton(
+              onPressed: () {
+                setState(() {
+                  clickCounter = 0;
+                });
+              },
+              icon: const Icon(Icons.refresh_outlined),
+            ),
+          ]),
       backgroundColor: const Color.fromARGB(255, 36, 125, 120),
       body: Center(
         child: Column(
