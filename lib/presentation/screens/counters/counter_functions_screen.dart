@@ -16,7 +16,7 @@ class _CounterFunctionsScreenState extends State<CounterFunctionsScreen> {
         appBar: AppBar(
             backgroundColor: const Color.fromARGB(255, 36, 125, 120),
             title: const Text(
-              "Counter Functions",
+              "Phillips Counter",
               style: TextStyle(color: Colors.white),
             ),
             actions: [
