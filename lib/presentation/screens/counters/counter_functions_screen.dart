@@ -101,7 +101,7 @@ class CustomButton extends StatelessWidget {
       shape: const StadiumBorder(),
       backgroundColor: Colors.white,
       onPressed: onPressed,
-      child: Icon(icon, color: Color.fromARGB(255, 14, 171, 174), size: 30),
+      child: Icon(icon, color: const Color.fromARGB(255, 14, 171, 174), size: 30),
     );
   }
 }
